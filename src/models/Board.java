@@ -19,8 +19,8 @@ public class Board {
             pieces[1][i] = new Pawn(player1, 1, i, validator,+1);
             pieces[6][i] = new Pawn(player2, 6, i, validator,-1);
             if(initialOrder[i].equals("ROCK")){
-                pieces[0][i] = new Rock(player1, 0, i, validator);
-                pieces[7][i] = new Rock(player2, 7, i, validator);
+                pieces[0][i] = new Rook(player1, 0, i, validator);
+                pieces[7][i] = new Rook(player2, 7, i, validator);
             }
             if(initialOrder[i].equals("KNIGHT")){
                 pieces[0][i] = new Knight(player1, 0, i, validator);
